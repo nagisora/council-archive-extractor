@@ -29,4 +29,13 @@ pnpm exec node tools/evaluate-golden.mjs path/to/corpus.txt
 pnpm run eval:golden:fixture
 ```
 
-詳細は `fixtures/golden-labels/README.md` を参照。
+## 統合テスト（市サイト＋議事録）
+
+令和7年11月定例会の市長提出案件を **5 件** 選び、議事録（kaigiroku）の市長提案説明から該当段落を切り出す:
+
+```bash
+pnpm exec playwright install chromium
+pnpm run test:integration:r7-202511
+```
+
+結果は `test-results/r7-202511-five-bills.json` に保存される。

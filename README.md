@@ -15,5 +15,6 @@ pnpm install
 pnpm exec playwright install chromium
 pnpm run capture:kaigiroku
 pnpm run eval:golden:fixture
+pnpm run test:integration:r7-202511
 ```
 
