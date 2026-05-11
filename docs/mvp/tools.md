@@ -38,4 +38,4 @@ pnpm exec playwright install chromium
 pnpm run test:integration:r7-202511
 ```
 
-結果は `test-results/r7-202511-five-bills.json` に保存される。
+結果は **`fixtures/integration-results/r7-202511-five-bills.json`** に保存される（Git で追跡可能）。別パスにしたい場合は `OUT_PATH` を指定する。

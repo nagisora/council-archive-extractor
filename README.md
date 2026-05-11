@@ -18,3 +18,5 @@ pnpm run eval:golden:fixture
 pnpm run test:integration:r7-202511
 ```
 
+統合テストの結果 JSON は `fixtures/integration-results/r7-202511-five-bills.json` に出力される。
+

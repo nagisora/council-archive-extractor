@@ -1,0 +1,42 @@
+{
+  "schema_version": "integration-test-1",
+  "session_label": "令和7年11月定例会（市長提出案件・本会議）",
+  "sources": {
+    "bill_index_url": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1043121.html",
+    "minutes_view_url": "https://ssp.kaigiroku.net/tenant/nagoya/SpMinuteView.html?power_user=false&tenant_id=207&council_id=660&schedule_id=2&view_years=2025",
+    "minutes_schedule_id": 2,
+    "council_id": 660
+  },
+  "bills": [
+    {
+      "bill_number": "第141号",
+      "title": "名古屋市家庭廃棄物等の持ち去りの防止に関する条例の制定について",
+      "decision_raw": "可決",
+      "bill_content_text": "第141号議案「名古屋市家庭廃棄物等の持ち去りの防止に関する条例の制定について」でございます。これは、家庭廃棄物等の持ち去りの防止に関し、基本となる事項を定めるために制定するものでございます。"
+    },
+    {
+      "bill_number": "第142号",
+      "title": "名古屋市家庭的保育事業等の設備及び運営に関する基準を定める条例の一部改正について",
+      "decision_raw": "可決",
+      "bill_content_text": "第142号議案「名古屋市家庭的保育事業等の設備及び運営に関する基準を定める条例の一部改正について」でございます。これは、家庭的保育事業等の設備及び運営に関する基準の一部改正に伴い、規定を整理するものでございます。"
+    },
+    {
+      "bill_number": "第143号",
+      "title": "名古屋市農業文化園条例の廃止について",
+      "decision_raw": "可決",
+      "bill_content_text": "第143号議案「名古屋市農業文化園条例の廃止について」でございます。これは、名古屋市農業文化園を戸田川緑地の公園施設にすることに伴い、条例を廃止するものでございます。"
+    },
+    {
+      "bill_number": "第144号",
+      "title": "名古屋市揚輝荘整備運営事業者選定審議会条例の制定について",
+      "decision_raw": "可決",
+      "bill_content_text": "第144号議案「名古屋市揚輝荘整備運営事業者選定審議会条例の制定について」でございます。これは、市長の附属機関として、名古屋市揚輝荘整備運営事業者選定審議会を設置するものでございます。"
+    },
+    {
+      "bill_number": "第145号",
+      "title": "名古屋市水道給水条例の一部改正について",
+      "decision_raw": "可決",
+      "bill_content_text": "第145号議案「名古屋市水道給水条例の一部改正について」及び第146号議案「名古屋市下水道条例の一部改正について」でございます。これらは、給水装置工事等及び排水設備工事を施行する事業者の指定に関する規定を整備するものでございます。"
+    }
+  ]
+}

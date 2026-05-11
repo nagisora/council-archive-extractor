@@ -5,6 +5,9 @@
  * Usage:
  *   pnpm exec playwright install chromium   # 初回のみ
  *   pnpm run test:integration:r7-202511
+ *
+ * 出力先（既定）: fixtures/integration-results/r7-202511-five-bills.json
+ * 上書きしたい場合: OUT_PATH=path/to/file.json pnpm run test:integration:r7-202511
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -167,9 +170,10 @@ async function main() {
     })),
   };
 
-  const outDir = path.join(ROOT, "test-results");
-  fs.mkdirSync(outDir, { recursive: true });
-  const outPath = path.join(outDir, "r7-202511-five-bills.json");
+  const outPath =
+    process.env.OUT_PATH ||
+    path.join(ROOT, "fixtures", "integration-results", "r7-202511-five-bills.json");
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(result, null, 2), "utf8");
 
   console.log(JSON.stringify({ ok: true, wrote: outPath, count: result.bills.length }, null, 2));
