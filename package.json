@@ -1,0 +1,13 @@
+{
+  "name": "council-archive-extractor",
+  "private": true,
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "capture:kaigiroku": "node tools/capture-kaigiroku-network.mjs",
+    "eval:golden": "node tools/evaluate-golden.mjs",
+    "eval:golden:fixture": "node tools/evaluate-golden.mjs fixtures/corpus-snippets/teigi202502-sched5-agenda-excerpt.txt"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0"
+  }
+}

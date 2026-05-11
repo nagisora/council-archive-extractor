@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "municipality": { "id": "nagoya", "name": "名古屋市" },
+  "legislature": { "body": "city_council", "name": "名古屋市会" },
+  "session": {
+    "era_name": "令和",
+    "era_year": 7,
+    "calendar_year": 2025,
+    "session_type": "regular",
+    "session_number": 2,
+    "session_label": "令和7年2月定例会"
+  },
+  "bill": {
+    "bill_key": "nagoya-r7-teigi-202502-022",
+    "bill_number": "第22号",
+    "title": "包括外部監査契約の締結について",
+    "title_raw": "包括外部監査契約の締結について",
+    "decision": "approved",
+    "decision_raw": "可決"
+  },
+  "sources": {
+    "bill_index": {
+      "url": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1031911.html",
+      "fetched_at": "2026-05-11T00:00:00Z"
+    },
+    "minutes": [
+      {
+        "url": "https://ssp.kaigiroku.net/tenant/nagoya/SpMinuteView.html?power_user=false&tenant_id=207&council_id=650&schedule_id=5&view_years=2025",
+        "fetched_at": "2026-05-11T00:00:00Z",
+        "delivery": "html",
+        "label": "本会議（令和7年2月定例会・03月06日－04号）",
+        "meeting_date": "2025-03-06"
+      }
+    ]
+  },
+  "bill_content": {
+    "text": "第22　同　第22号議案　包括外部監査契約の締結について",
+    "is_complete": false,
+    "spans": []
+  },
+  "extraction": {
+    "pipeline": "manual_snippet_v0",
+    "rule_stage": { "applied": false, "matched_patterns": [] },
+    "fallback_stage": { "used": false },
+    "confidence": 0.2,
+    "warnings": [
+      "MVP サンプル: 議題見出し行のみ手置き。条例説明などの全文抽出は未実装。"
+    ]
+  },
+  "notes": "docs/mvp/research および fixtures/golden-labels を参照。本ファイルはスキーマ検証用の例。"
+}

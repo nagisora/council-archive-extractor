@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0-golden",
+  "bill_key": "nagoya-r7-teigi-202502-001",
+  "bill_number_raw": "第1号",
+  "title": "令和7年度名古屋市一般会計予算",
+  "session_label": "令和7年2月定例会（本会議）",
+  "sources": {
+    "bill_index_page_id": "1031911",
+    "bill_index_url": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1031911.html",
+    "minutes_human_view_url": "https://ssp.kaigiroku.net/tenant/nagoya/SpMinuteView.html?power_user=false&tenant_id=207&council_id=650&schedule_id=5&view_years=2025",
+    "minutes_api": {
+      "name": "get_minute",
+      "path": "/dnp/search/minutes/get_minute",
+      "delivery": "application/javascript+jsonp",
+      "payload_key": "tenant_minutes[].body",
+      "body_format": "HTML（主に<pre>内のプレーンテキスト）"
+    }
+  },
+  "evaluation": {
+    "scope": "本会議の議題見出し行（MVP 用の最小照合）",
+    "gold_must_contain_all": ["第１　令和７年第１号議案　令和７年度名古屋市一般会計予算"],
+    "notes": "議案の説明・趣旨の全文ラベルは今後、該当日程の発言ブロックを人手で区切って追記する。"
+  }
+}
