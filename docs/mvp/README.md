@@ -189,9 +189,22 @@ PDF の場合は `page_start` / `page_end` 等を `spans` に追加する拡張�
 
 ## 9. 次のアクション（実装フェーズ向けチェックリスト）
 
-1. 議案一覧ページの HTML 構造を確認し、**議案 ID・表決・議案名**の取得方法を確定する  
-2. 議事録（2025・本会議 1 件）で **実際の本文取得経路（HTML／XHR／PDF）** を確定する  
-3. 数件の議案で**人手ラベル**（正しい引用範囲）を作り、ルール段階の精度を測る  
-4. `bill.json` の**サンプル 1 件**をリポジトリに置くか、生成コマンドの README を追記する（任意）  
+**対応済み（成果物の置き場所）**
+
+1. **議案一覧 HTML の構造と取得方針**  
+   - 調査結果: `docs/mvp/research/nagoya-city-bill-index.md`
+2. **議事録（2025・本会議）の本文取得経路**  
+   - 調査結果: `docs/mvp/research/nagoya-kaigiroku-minute-delivery.md`  
+   - ネットワーク観測スクリプト: `tools/capture-kaigiroku-network.mjs`（手順は `docs/mvp/tools.md`）
+3. **数件の人手ラベル（最低限の照合文字列）**  
+   - ゴールデン JSON: `fixtures/golden-labels/*.golden.json`（※MVP では議題見出し行を照合対象とする旨を各ファイルに記載）  
+   - 評価スクリプト: `tools/evaluate-golden.mjs`（`pnpm run eval:golden:fixture` で抜粋コーパスを使用可能）
+4. **`bill.json` のサンプル**  
+   - `samples/nagoya/r7-teigi-202502/bill-022/bill.json`
+
+**この先の拡張（未着手）**
+
+- ゴールデンを「説明員の説明全文」単位に増やす（委員会日程の特定が必要）。  
+- `get_minute` を公式に安定呼び出しするためのクエリ組み立てをライブラリ化する。
 
 以上が MVP 開発のたたき台資料である。更新したら本ファイルの更新履歴か Git ログで追う。

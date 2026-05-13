@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0-golden",
+  "bill_key": "nagoya-r7-teigi-202502-022",
+  "bill_number_raw": "第22号",
+  "title": "包括外部監査契約の締結について",
+  "session_label": "令和7年2月定例会（本会議）",
+  "sources": {
+    "bill_index_page_id": "1031911",
+    "bill_index_url": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1031911.html",
+    "minutes_human_view_url": "https://ssp.kaigiroku.net/tenant/nagoya/SpMinuteView.html?power_user=false&tenant_id=207&council_id=650&schedule_id=5&view_years=2025",
+    "minutes_api": {
+      "name": "get_minute",
+      "path": "/dnp/search/minutes/get_minute",
+      "delivery": "application/javascript+jsonp",
+      "payload_key": "tenant_minutes[].body",
+      "body_format": "HTML（主に<pre>内のプレーンテキスト）"
+    }
+  },
+  "evaluation": {
+    "scope": "本会議の議題見出し行（MVP 用の最小照合）",
+    "gold_must_contain_all": ["第22　同　第22号議案　包括外部監査契約の締結について"],
+    "notes": "議案説明の全文ラベルは、総務環境委員会等の日程を特定して追補する。"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "council-archive-extractor",
+  "private": true,
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "capture:kaigiroku": "node tools/capture-kaigiroku-network.mjs",
+    "eval:golden": "node tools/evaluate-golden.mjs",
+    "eval:golden:fixture": "node tools/evaluate-golden.mjs fixtures/corpus-snippets/teigi202502-sched5-agenda-excerpt.txt",
+    "test:integration:r7-202511": "node tools/integration/r7-202511-five-bills.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}
